@@ -34,5 +34,10 @@ Ep-17
  -Show Toast message on save of profile
  -Create a page where see all  connection 
  - Create a page See all my connection requests
+-Feature - Accept/Reject Connection Requests
 
- 33:12
+Remianing
+
+-Send/ignore  the user card from feed
+-Signup new user
+-e2e testing

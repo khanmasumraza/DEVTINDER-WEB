@@ -11,13 +11,12 @@ const EditProfile = ({user}) => {
   const [age, setage] = useState(user.age);
   const [about,setabout]=useState(user.about);
   const [photoUrl,setphotoUrl]=useState(user.photoUrl);
-  const [gender,setgender]=useState(user.gender)
+  const [gender,setgender]=useState(user.gender);
   const [error,seterror]=useState("");
   const[showToast,setshowToast]=useState(false)
   const dispatch=useDispatch();
 
   const saveProfile=async ()=>{
-    // Clear Errors
     seterror("")
     try{
          console.log("Sending data:", {firstname, lastname, photoUrl, about,age,gender})
@@ -35,12 +34,11 @@ setTimeout(() => {
     }
   }
   return (
-    <><div className='flex justify-center my-10'>
-     <div className="flex justify-center mx-10">
-    <div className="card bg-lime-100 w-96 shadow-xl">
+    <><div className='flex justify-center  gap-10 my-10'>
+    <div className="card bg-lime-100 w-96 shadow-xl p-6 rounded-lg">
   <div className="card-body">
     <h2 className="card-title justify-center" >Edit Profile</h2>
-   <div>
+
 <div className="form-control w-full max-w-xs py-4">
   <label className="label">
     <span className="label-text">Firstname</span>
@@ -81,7 +79,15 @@ setTimeout(() => {
    />
 </div>
 
-   </div>
+ <div className="form-control w-full max-w-xs py-4">
+  <label className="label">
+    <span className="label-text">Age</span>
+  </label>
+  <input type="text" value={age}
+   placeholder="" className="input input-bordered w-full max-w-xs my-2" 
+   onChange={(e)=>setage(e.target.value)}
+   />
+</div>
 
    <div className="form-control w-full max-w-xs py-4">
   <label className="label">
@@ -99,9 +105,12 @@ setTimeout(() => {
     </div>
   </div>
 </div>
+
+<div>
+<Usercard user={{firstname,lastname,photoUrl,about,age,gender}}/>
 </div>
-<Usercard user={{firstname,lastname,photoUrl,about,}}/>
 </div>
+
 {showToast && (
    <div className="toast toast-top toast-center">
   <div className="alert alert-success">
