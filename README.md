@@ -30,5 +30,8 @@ Ep-17
  -Logout feature add
  -Get the feed and add the feed in the store
  -Build the user card on feed
+ -Edit profile feature
+ -Show Toast message on save of profile
+ -Create connection page
 
  
