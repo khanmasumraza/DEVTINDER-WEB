@@ -42,3 +42,38 @@ Ep-19
 -Send/ignore  the user card from feed
 -Signup new user
 -e2e testing
+
+# Deployemnt  S3 Ep 1 & Ep 2
+
+-Frontend 
+-Backend 
+notes are added in notebook
+
+
+# Adding a custom domain name  Ep 3
+
+-Purchasing domain name from godaddy
+-signup on cloudfare & add a new domain name
+-change the nameservers on godaddy and point it to cloudfare
+-wait for sometime  till your  namservers are update ~ 15 minutes
+-DNS record:A devtinder.in 43.204.96.49
+-Enable SSL for website
+
+# Sending Emails via SES  Ep4 
+
+- Create a IAM user
+- Give Access to AmazonSESFullAccess
+- Amazon SES: Create an Identity
+- Verify your domain name
+- Verify an email address identity
+- Install AWS SDK v3
+- Code Example https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascripttv3/example_code/ses#code-examples
+- Setup SesClient
+- Access Credentials should be created in IAM under SecurityCredentials Tab
+- Add the credentials to the env file
+- Write code for SESClient
+- Write code for Sending email address
+- Make the email dynamic by passing more params to the run function
+
+ 
+
