@@ -104,9 +104,9 @@ notes are added in notebook
 - Intialized Razorpay in utils 
 - creating order on razorpay 
 - create Schema and model
-- saved the order  in payments db collection
+- saved the order in payments collection
 - make the api dynamic 
--adding pop up feat 
--and make payment success in test mode
 
-01:40:50
+
+
+01:37:57
